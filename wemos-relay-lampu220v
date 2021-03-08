@@ -1,10 +1,10 @@
 #define BLYNK_PRINT Serial
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
-char auth[] = "nNv-9pO_biP7kHn15PKqmQkNL36MEat2";
+char auth[] = "token di email dari blynk";
 
-char ssid[] = "Sumedang laptop 2";
-char pass[] = "sumedang22332";
+char ssid[] = "nama accesspoint anda";
+char pass[] = "password accesspoint";
 
 int LED = D4; // Define LED as an Integer (whole numbers) and pin D8 on Wemos D1 Mini Pro
 
