@@ -8,7 +8,7 @@ char auth[] = "Auth Token email dari Blynk";
 char ssid[] = "nama accesspoint anda";
 char pass[] = "password";
 
-#define DHTPIN D7          
+#define DHTPIN D4          
 #define DHTTYPE DHT11 
 DHT dht(DHTPIN, DHTTYPE);
 BlynkTimer timer;
@@ -39,4 +39,11 @@ void loop()
 {
   Blynk.run();
   timer.run();
+   float t = dht.readTemperature();
+  float h = dht.readHumidity();
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(h);
+  Serial.println(F("% "));
+  delay(2000); 
 }
