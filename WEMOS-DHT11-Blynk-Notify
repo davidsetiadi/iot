@@ -24,10 +24,7 @@ void sendSensor()
   }
   Blynk.virtualWrite(V5, t);
   Blynk.virtualWrite(V6, h);
-
-}
-void notifySensor() {
-  int t = dht.readTemperature();
+  
   if (t >= 28) {
     Serial.println("Bahaya !!! SUHU TINGGI");
     Blynk.notify("Notif : Bahaya !!! SUHU TINGGI");
