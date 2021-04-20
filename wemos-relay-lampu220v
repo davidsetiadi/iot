@@ -6,7 +6,7 @@ char auth[] = "token di email dari blynk";
 char ssid[] = "nama accesspoint anda";
 char pass[] = "password accesspoint";
 
-int LED = D4; // Define LED as an Integer (whole numbers) and pin D8 on Wemos D1 Mini Pro
+int LED = D1; // pin out relay di wemos anda
 
 void setup()
 {
